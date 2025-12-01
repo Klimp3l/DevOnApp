@@ -13,8 +13,7 @@ import Constants from 'expo-constants';
 // Prioridade: EXPO_PUBLIC_API_BASE_URL > extra.apiBaseUrl > fallback
 export const API_BASE_URL = 
   process.env.EXPO_PUBLIC_API_BASE_URL || 
-  Constants.expoConfig?.extra?.apiBaseUrl || 
-  'http://localhost:3000';
+  Constants.expoConfig?.extra?.apiBaseUrl;
 
 // Log da URL carregada (útil para debug)
 if (__DEV__) {
