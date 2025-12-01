@@ -43,7 +43,10 @@ module.exports = {
     },
     extra: {
       // Variáveis de ambiente acessíveis via Constants.expoConfig.extra
-      apiBaseUrl: process.env.EXPO_PUBLIC_API_BASE_URL || 'http://localhost:3000'
+      apiBaseUrl: process.env.EXPO_PUBLIC_API_BASE_URL || 'http://localhost:3000',
+      eas: {
+        projectId: "007de3bf-c1b4-4060-b05c-339f2b39e557"
+      }
     }
   }
 };
